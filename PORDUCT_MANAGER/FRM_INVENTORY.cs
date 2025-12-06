@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PORDUCT_MANAGER
 {
-    public partial class FRM_show_image : Form
+    public partial class FRM_INVENTORY : Form
     {
-        public FRM_show_image()
+        public FRM_INVENTORY()
         {
             InitializeComponent();
-        }
-
-        private void FRM_show_image_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

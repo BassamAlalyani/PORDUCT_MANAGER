@@ -50,6 +50,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "FRM_show_image";
             this.Text = "FRM_show_image";
+            this.Load += new System.EventHandler(this.FRM_show_image_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

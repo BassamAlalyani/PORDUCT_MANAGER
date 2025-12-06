@@ -54,7 +54,10 @@
       <DependentUpon>Category_manager.cs</DependentUpon>
     </Compile>
     <Compile Include="classes\category_manager.cs" />
+    <Compile Include="classes\CLS_orders.cs" />
     <Compile Include="classes\CLS_product.cs" />
+    <Compile Include="classes\CLS_Sales.cs" />
+    <Compile Include="classes\CLS_suppliers.cs" />
     <Compile Include="classes\CS_LOGin.cs" />
     <Compile Include="DA\DataAccess.cs" />
     <Compile Include="Form1.cs">
@@ -69,11 +72,29 @@
     <Compile Include="FRM_ADD_PRODUCT.Designer.cs">
       <DependentUpon>FRM_ADD_PRODUCT.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_ADD_PURCHASE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ADD_PURCHASE.Designer.cs">
+      <DependentUpon>FRM_ADD_PURCHASE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_INVENTORY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_INVENTORY.Designer.cs">
+      <DependentUpon>FRM_INVENTORY.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_login.Designer.cs">
       <DependentUpon>FRM_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_POS.Designer.cs">
+      <DependentUpon>FRM_POS.cs</DependentUpon>
     </Compile>
     <Compile Include="FRM_product_manager.cs">
       <SubType>Form</SubType>
@@ -87,6 +108,12 @@
     <Compile Include="FRM_show_image.Designer.cs">
       <DependentUpon>FRM_show_image.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_suppliers_manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_suppliers_manager.Designer.cs">
+      <DependentUpon>FRM_suppliers_manager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Category_manager.resx">
@@ -98,14 +125,26 @@
     <EmbeddedResource Include="FRM_ADD_PRODUCT.resx">
       <DependentUpon>FRM_ADD_PRODUCT.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ADD_PURCHASE.resx">
+      <DependentUpon>FRM_ADD_PURCHASE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_INVENTORY.resx">
+      <DependentUpon>FRM_INVENTORY.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_login.resx">
       <DependentUpon>FRM_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_POS.resx">
+      <DependentUpon>FRM_POS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_product_manager.resx">
       <DependentUpon>FRM_product_manager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_show_image.resx">
       <DependentUpon>FRM_show_image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_suppliers_manager.resx">
+      <DependentUpon>FRM_suppliers_manager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

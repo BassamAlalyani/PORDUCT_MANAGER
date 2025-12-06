@@ -16,8 +16,9 @@ namespace PORDUCT_MANAGER
         {
             InitializeComponent();
         }
-        // انشاءت كاين cs  من كلاسي اللي عملته
-        classes.category_manager cs = new classes.category_manager();
+
+
+        classes.category_manager cs = new classes.category_manager();// استدعي الكلاس تبعه كاس ادارة المنتجات 
         private void Category_manager_Load(object sender, EventArgs e)
         {
            dataGridView1.DataSource =  cs.show_categories(); // لعرض  بيانات الصنف اللي ادخلتها في datagridView
@@ -38,7 +39,7 @@ namespace PORDUCT_MANAGER
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //   زر الاظافة  او يسمى ادخال 
         {
            // classes.category_manager cs = new classes.category_manager();
             cs.add_category(textBox1.Text); // اضف صنف جديد لنفس التيكست المذكور 

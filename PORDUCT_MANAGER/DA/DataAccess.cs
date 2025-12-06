@@ -38,7 +38,7 @@ namespace PORDUCT_MANAGER.DA
                 }
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
-            da.Fill(dt);
+           da.Fill(dt);
             return dt;
 
         }

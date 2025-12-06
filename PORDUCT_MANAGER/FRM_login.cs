@@ -15,6 +15,7 @@ namespace PORDUCT_MANAGER
         public FRM_login()
         {
             InitializeComponent();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,18 +26,25 @@ namespace PORDUCT_MANAGER
             dt =  cs_LO.login( textBox1.Text ,textBox2.Text );
             if( dt.Rows.Count > 0)
             {
-                this.Close();
+                //this.Close();
+                Form1 MAINFORM = new Form1();
+                MAINFORM.ShowDialog();
+                this.Hide();
+               
+                // f.menuStrip2.Enabled = true;
             }
             else
             {
-                MessageBox.Show("تسجيل  الدخول خاطي ");
+
+             
+                MessageBox.Show( "الرجاء اعادة المحاولة ","تسجيل  الدخول خاطي ");
             }
 
-            Form1 f = Application.OpenForms["Form1"] as Form1;
-           f.button1.Enabled = true;
-            f.button2.Enabled = false;
-            f.button3.Enabled = true;
-            f.button4.Enabled = true;
+            //Form1 f = Application.OpenForms["Form1"] as Form1;
+          // f.button1.Enabled = true;
+           // f.button2.Enabled = false;
+           // f.button3.Enabled = true;
+           // f.button4.Enabled = true;
            // f.menuStrip2.Enabled = true;
           
          
@@ -49,6 +57,16 @@ namespace PORDUCT_MANAGER
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FRM_login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox_by_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

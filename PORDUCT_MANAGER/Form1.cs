@@ -51,11 +51,18 @@ namespace PORDUCT_MANAGER
         private void button2_Click(object sender, EventArgs e)
         {
             نقطةبيعToolStripMenuItem.PerformClick();
+
+   
+            FRM_POS f = new FRM_POS();
+            f.ShowDialog();
+        
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             اظافةفاتورةشراءToolStripMenuItem.PerformClick();
+            FRM_ADD_PURCHASE  n = new FRM_ADD_PURCHASE();
+            n.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -111,5 +118,26 @@ namespace PORDUCT_MANAGER
             Form f = new FRM_product_manager();
             f.ShowDialog();
         }
+
+        private void اظافةموردجديدToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FRM_suppliers_manager f = new FRM_suppliers_manager();
+            f.ShowDialog();
+        }
+
+        private void اظافةفاتورةشراءToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FRM_ADD_PURCHASE f = new FRM_ADD_PURCHASE();
+            f.ShowDialog();
+        }
+
+        private void نقطةبيعToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        
+            FRM_POS f = new FRM_POS();
+            f.ShowDialog();
+        
+    }
     }
 }

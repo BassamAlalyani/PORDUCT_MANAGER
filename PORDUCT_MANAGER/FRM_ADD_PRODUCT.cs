@@ -56,5 +56,10 @@ namespace PORDUCT_MANAGER
             txt_id.Focus(); // لوضع الموشر في اول حقل 
 
         }
+
+        private void FRM_ADD_PRODUCT_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

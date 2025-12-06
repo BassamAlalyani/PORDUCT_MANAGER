@@ -52,7 +52,8 @@ namespace PORDUCT_MANAGER.classes
             return da.SelectData("Search_pruduct", p);
 
         }
-        public void delete_product(int id)
+
+        public void delete_product(int id) 
         {
             SqlParameter[] p = new SqlParameter[1];
             p[0] = new SqlParameter("@id", SqlDbType.Int);
